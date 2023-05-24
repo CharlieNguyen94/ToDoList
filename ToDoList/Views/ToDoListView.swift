@@ -6,7 +6,7 @@ struct ToDoListView: View {
     }
 }
 
-struct ToDoListItemView_Previews: PreviewProvider {
+struct ToDoListView_Previews: PreviewProvider {
     static var previews: some View {
         ToDoListView()
     }

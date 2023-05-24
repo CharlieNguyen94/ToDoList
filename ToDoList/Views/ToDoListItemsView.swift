@@ -1,10 +1,3 @@
-//
-//  ToDoListItemsView.swift
-//  ToDoList
-//
-//  Created by Charlie Nguyen on 24/05/2023.
-//
-
 import SwiftUI
 
 struct ToDoListItemsView: View {
