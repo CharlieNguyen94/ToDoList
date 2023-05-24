@@ -15,6 +15,10 @@ struct LoginView: View {
 				)
 
 				Form {
+					if !viewModel.errorMessage.isEmpty {
+						Text(viewModel.errorMessage)
+							.foregroundColor(.red)
+					}
 					TextField("Email Address", text: $viewModel.email)
 						.textFieldStyle(.automatic)
 						.textInputAutocapitalization(.none)
@@ -26,7 +30,7 @@ struct LoginView: View {
 						title: "Log in",
 						background: .blue
 					) {
-						
+						viewModel.login()
 					}
 				}
 				.offset(y: -50)
