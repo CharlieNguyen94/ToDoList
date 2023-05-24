@@ -32,6 +32,7 @@
 		956AED532A1E31FF0054260E /* ToDoListItemsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AED522A1E31FF0054260E /* ToDoListItemsViewViewModel.swift */; };
 		956AED552A1E4BFD0054260E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AED542A1E4BFD0054260E /* HeaderView.swift */; };
 		956AED572A1E57960054260E /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AED562A1E57960054260E /* TLButton.swift */; };
+		956AED592A1E60EA0054260E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AED582A1E60EA0054260E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		956AED522A1E31FF0054260E /* ToDoListItemsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemsViewViewModel.swift; sourceTree = "<group>"; };
 		956AED542A1E4BFD0054260E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		956AED562A1E57960054260E /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		956AED582A1E60EA0054260E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				9511E6C62A1E27400064FEF9 /* Assets.xcassets */,
-				9511E6C22A1E273D0064FEF9 /* ToDoListApp.swift */,
 				9511E6D72A1E2B970064FEF9 /* GoogleService-Info.plist */,
+				9511E6C22A1E273D0064FEF9 /* ToDoListApp.swift */,
+				956AED582A1E60EA0054260E /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				956AED372A1E30340054260E /* ProfileView.swift in Sources */,
 				956AED4B2A1E31BB0054260E /* ToDoListViewViewModel.swift in Sources */,
 				956AED4F2A1E31DF0054260E /* LoginViewViewModel.swift in Sources */,
+				956AED592A1E60EA0054260E /* Extensions.swift in Sources */,
 				9511E6C32A1E273D0064FEF9 /* ToDoListApp.swift in Sources */,
 				956AED452A1E316A0054260E /* ToDoListItem.swift in Sources */,
 				956AED3B2A1E305E0054260E /* NewItemView.swift in Sources */,
