@@ -1,6 +1,6 @@
 import Foundation
 
-struct ToDoListItem: Codable, Identifiable {
+struct ToDoListItem: Codable, Identifiable, Equatable {
 	let id: String
 	let title: String
 	let dueDate: TimeInterval

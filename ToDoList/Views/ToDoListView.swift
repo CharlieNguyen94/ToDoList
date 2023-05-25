@@ -2,26 +2,30 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
-	@StateObject var viewModel = ToDoListViewViewModel()
+	@StateObject var viewModel: ToDoListViewViewModel
 	@FirestoreQuery var items: [ToDoListItem]
 
 	init(userId: String) {
 		self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
+		self._viewModel = StateObject(
+			wrappedValue: ToDoListViewViewModel(userId: userId))
 	}
 
     var body: some View {
 		NavigationView {
 			VStack {
-				List(items) { item in
+				List(items, id: \.id) { item in
 					ToDoListItemView(item: item)
 						.swipeActions {
 							Button("Delete") {
 								viewModel.delete(id: item.id)
 							}
+							.tint(.red)
 						}
 				}
 				.listStyle(.automatic)
 			}
+			.animation(.default, value: items)
 			.navigationTitle("To Do List")
 			.toolbar {
 				Button {
